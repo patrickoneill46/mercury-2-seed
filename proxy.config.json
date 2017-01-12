@@ -1,0 +1,10 @@
+{
+ "/place-trade": {
+   "target": "http://localhost:3001",
+   "secure": false
+ },
+ "/tradingapi/*": {
+   "target": "http://pkh-dev-merc1",
+   "secure": false
+ }
+}
