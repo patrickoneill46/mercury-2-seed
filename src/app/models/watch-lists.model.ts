@@ -1,4 +1,4 @@
-﻿export interface IWatchlistsModel {
+﻿export interface IWatchlistModel { // Single watchlist
   id: string;
   markets: string[],
   name: string;

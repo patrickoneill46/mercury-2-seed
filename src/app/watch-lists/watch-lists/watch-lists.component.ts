@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import * as reducers from '../../reducers/index';
-import * as watchlistActions from '../../Actions/watch-lists.actions';
+import * as watchlistActions from '../../Actions/watch-list-collection.actions';
 
 @Component({
   selector: 'app-watch-lists',
@@ -16,7 +16,7 @@ export class WatchListsComponent implements OnInit {
   }
 
   get watchLists() {
-    return this
+    return this;
   }
 
   ngOnInit() {

@@ -94,14 +94,14 @@
   <ItemGroup>
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
     <TypeScriptCompile Include="e2e\app.po.ts" />
-    <TypeScriptCompile Include="src\app\Actions\watch-lists.actions.ts" />
+    <TypeScriptCompile Include="src\app\Actions\watch-list-collection.actions.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\index.ts" />
     <TypeScriptCompile Include="src\app\models\watch-lists.model.ts" />
     <TypeScriptCompile Include="src\app\reducers\index.ts" />
-    <TypeScriptCompile Include="src\app\reducers\watch-lists.reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\watch-list-collection.reducer.ts" />
     <TypeScriptCompile Include="src\app\utils\utils.ts" />
     <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.spec.ts" />
     <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.ts" />

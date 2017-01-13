@@ -1,6 +1,6 @@
 ﻿import { Action } from '@ngrx/store';
 import { type } from '../utils/utils';
-import { IWatchlistsModel } from '../models/watch-lists.model';
+import { IWatchlistModel } from '../models/watch-lists.model';
 
 
 /**
@@ -12,8 +12,8 @@ import { IWatchlistsModel } from '../models/watch-lists.model';
  * action types in the application are unique. 
  */
 export const ActionTypes = {
-  LOAD: type('[Watchlists] Load'),
-  ADD:  type('[Watchlists] Add watch list')
+  LOAD: type('[Watchlist] Load watchlists'),
+  ADD:  type('[Watchlist] Add watchlists')
 }
 
 
@@ -27,13 +27,13 @@ export const ActionTypes = {
 export class LoadAction implements Action {
   type = ActionTypes.LOAD;
 
-  constructor(public payload: IWatchlistsModel) { }
+  constructor(public payload: IWatchlistModel[]) { }
 }
 
 export class AddAction implements Action {
   type = ActionTypes.ADD;
 
-  constructor(public payload: IWatchlistsModel) { }
+  constructor(public payload: IWatchlistModel) { }
 }
 
 

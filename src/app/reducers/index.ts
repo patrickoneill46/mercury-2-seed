@@ -1,8 +1,8 @@
-﻿import * as fromWatchlists from './watch-lists.reducer';
+﻿import * as fromWatchlistCollection from './watch-list-collection.reducer';
 
 
 const reducers = {
-  watchlists: fromWatchlists.reducer
+  watchlists: fromWatchlistCollection.reducer
 };
 
 
@@ -11,5 +11,5 @@ const reducers = {
  * our top level state interface is just a map of keys to inner state types.
  */
 export interface State {
-  watchlists: fromWatchlists.IState
+  watchlists: fromWatchlistCollection.IState
 }
