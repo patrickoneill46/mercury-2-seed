@@ -15,6 +15,10 @@ export class WatchListsComponent implements OnInit {
    // this.store.select()
   }
 
+  get watchLists() {
+    return this
+  }
+
   ngOnInit() {
     //this.store.dispatch();
   }

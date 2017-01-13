@@ -75,6 +75,7 @@
     <Folder Include="src\app\models\" />
     <Folder Include="src\app\components\" />
     <Folder Include="src\app\Actions\" />
+    <Folder Include="src\app\utils\" />
     <Folder Include="src\app\reducers\" />
     <Folder Include="src\app\watch-lists\" />
     <Folder Include="src\app\watch-lists\watch-lists\" />
@@ -101,6 +102,7 @@
     <TypeScriptCompile Include="src\app\models\watch-lists.model.ts" />
     <TypeScriptCompile Include="src\app\reducers\index.ts" />
     <TypeScriptCompile Include="src\app\reducers\watch-lists.reducer.ts" />
+    <TypeScriptCompile Include="src\app\utils\utils.ts" />
     <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.spec.ts" />
     <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
