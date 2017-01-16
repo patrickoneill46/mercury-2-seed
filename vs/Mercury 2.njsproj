@@ -54,8 +54,8 @@
     <Content Include="README.md" />
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\app.component.html" />
-    <Content Include="src\app\watch-lists\watch-lists\watch-lists.component.css" />
-    <Content Include="src\app\watch-lists\watch-lists\watch-lists.component.html" />
+    <Content Include="src\app\components\watch-lists\watch-lists\watch-lists.component.css" />
+    <Content Include="src\app\components\watch-lists\watch-lists\watch-lists.component.html" />
     <Content Include="src\assets\.gitkeep" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -75,10 +75,11 @@
     <Folder Include="src\app\models\" />
     <Folder Include="src\app\components\" />
     <Folder Include="src\app\Actions\" />
+    <Folder Include="src\app\services\" />
     <Folder Include="src\app\utils\" />
     <Folder Include="src\app\reducers\" />
-    <Folder Include="src\app\watch-lists\" />
-    <Folder Include="src\app\watch-lists\watch-lists\" />
+    <Folder Include="src\app\components\watch-lists\" />
+    <Folder Include="src\app\components\watch-lists\watch-lists\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\environments\" />
     <Folder Include="vs\" />
@@ -102,9 +103,10 @@
     <TypeScriptCompile Include="src\app\models\watch-lists.model.ts" />
     <TypeScriptCompile Include="src\app\reducers\index.ts" />
     <TypeScriptCompile Include="src\app\reducers\watch-list-collection.reducer.ts" />
+    <TypeScriptCompile Include="src\app\services\watch-list.service.ts" />
     <TypeScriptCompile Include="src\app\utils\utils.ts" />
-    <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.spec.ts" />
-    <TypeScriptCompile Include="src\app\watch-lists\watch-lists\watch-lists.component.ts" />
+    <TypeScriptCompile Include="src\app\components\watch-lists\watch-lists\watch-lists.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\components\watch-lists\watch-lists\watch-lists.component.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />

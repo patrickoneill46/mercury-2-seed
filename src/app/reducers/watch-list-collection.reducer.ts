@@ -3,16 +3,16 @@ import * as  watchlistCollectionActions from '../Actions/watch-list-collection.a
 
 
 export interface IState {
+  loaded: boolean;
   ids: string[];
-  entities: { [id: string]: IWatchlistModel };
 };
 
 const initialState: IState = {
-  ids: [],
-  entities: {}
+  loaded: false,
+  ids: []
 };
 
-export function reducer(state = initialState, action: watchlistCollectionActions.Actions) {
+export function reducer(state = initialState, action: watchlistCollectionActions.Actions): IState {
 
   switch (action.type) {
     case watchlistCollectionActions.ActionTypes.LOAD: {
@@ -20,17 +20,17 @@ export function reducer(state = initialState, action: watchlistCollectionActions
 
       return Object.assign({}, state,{
           loaded: true,
-          ids: watchlists.map((items) => { return items.id; })
+          ids: watchlists.map(item => item.id)
         });
     }
 
     case watchlistCollectionActions.ActionTypes.ADD: {
-      const watchlist = action.payload;
+      const watchlist = action.payload[0]; //NB: Workaround for common type error
 
       if (state.ids.indexOf(watchlist.id) > -1) {
         return state;
       }
-
+      
       return Object.assign({}, state, {
         ids: [...state.ids, watchlist.id]
       });
@@ -45,3 +45,6 @@ export function reducer(state = initialState, action: watchlistCollectionActions
     }
   }
 }
+
+export const getLoad = (state: IState) => state.loaded;
+export const getIds = (state: IState) => state.ids;
