@@ -1,31 +1,46 @@
-# Mercury2
+#@ngrx example application
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
+Example application utilizing @ngrx libraries, showcasing common patterns and best practices. 
+You can find the live app [here](http://ngrx.github.io/example-app/).
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This app is a book collection manager. Using the Google Books API, the user can search for 
+books and add them to their collection. This application utilizes [@ngrx/db](https://github.com/ngrx/db) 
+to persist the collection across sessions; [@ngrx/store](https://github.com/ngrx/store) to manage 
+the state of the app and to cache requests made to the Google Books API; 
+[@angular/router](https://github.com/angular/angular) to manage navigation between routes; 
+[@ngrx/effects](https://github.com/ngrx/effects) to isolate side effects. 
 
-## Code scaffolding
+Built with [angular-cli](https://github.com/angular/angular-cli)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+### Included
+ - [ngrx/store](https://github.com/ngrx/store) - RxJS powered state management for Angular2 apps, inspired by Redux
+ - [ngrx/effects](https://github.com/ngrx/effects) - Side effect model for @ngrx/store
+ - [angular/router](https://github.com/angular/angular) - Angular2 Component Router
+ - [ngrx/db](https://github.com/ngrx/db) - RxJS powered IndexedDB for Angular2 apps
+ - [ngrx/store-devtools](https://github.com/ngrx/store-devtools) - Instrumentation for @ngrx/store enabling time-travel debugging
+ - [codewareio/ngrx-store-freeze](https://github.com/codewareio/ngrx-store-freeze) - A @ngrx/store meta reducer that prevents state from being mutated
 
-## Build
+### Quick start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```bash
+# clone the repo
+git clone https://github.com/ngrx/example-app.git
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# change directory to repo
+cd example-app
 
-## Running end-to-end tests
+# Use npm or yarn to install the dependencies:
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+# OR
+yarn
 
-## Deploying to Github Pages
+# start the server
+ng serve
+```
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+Navigate to [http://localhost:4200/](http://localhost:4200/) in your browser
 
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+_NOTE:_ The above setup instructions assume you have added local npm bin folders to your path. 
+If this is not the case you will need to install the angular-cli globally.
