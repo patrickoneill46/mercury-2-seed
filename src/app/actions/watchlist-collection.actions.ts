@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
-import { Watchlist } from '../models/watchlist';
-import { type } from '../util';
+import { Watchlist } from '../models/watchlist.model';
+import { type } from '../utils/util';
 
 
 export const ActionTypes = {

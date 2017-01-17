@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Watchlist } from '../models/watchlist';
+import { Watchlist } from '../models/watchlist.model';
 
 @Component({
   selector: 'watchlist-collection',

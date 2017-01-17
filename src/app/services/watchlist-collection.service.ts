@@ -3,15 +3,15 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as fromRoot from '../reducers';
-import { Watchlist } from '../models/watchlist';
-import * as watchlistActions from '../actions/watchlist-collection';
+import { Watchlist } from '../models/watchlist.model';
+import * as watchlistActions from '../actions/watchlist-collection.actions';
 
 @Injectable()
 export class WatchlistCollectionService {
 
   constructor(private store: Store<fromRoot.State>) { }
 
-  getList() {
+  getList(): Observable<Watchlist[]> {
     return this.store.select(fromRoot.getWatchlistCollectionList);
   }
 

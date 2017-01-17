@@ -12,7 +12,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
 import * as fromRoot from '../reducers';
-import * as watchlistCollection from '../actions/watchlist-collection';
+import * as watchlistCollection from '../actions/watchlist-collection.actions';
 
 
 /**

@@ -4,7 +4,7 @@ import { MaterialModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { WatchlistCollectionComponent } from './watchlist-collection';
+import { WatchlistCollectionComponent } from './watchlist-collection.component';
 import { LayoutComponent } from './layout';
 
 import { PipesModule } from '../pipes';

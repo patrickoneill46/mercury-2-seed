@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import * as fromRoot from '../reducers';
-import { Watchlist } from '../models/watchlist';
+import { Watchlist } from '../models/watchlist.model';
 import { WatchlistCollectionService } from '../services/watchlist-collection.service';
 
 @Component({

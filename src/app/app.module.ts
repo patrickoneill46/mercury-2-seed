@@ -11,7 +11,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MaterialModule } from '@angular/material';
 
 import { ComponentsModule } from './components';
-import { BookExistsGuard } from './guards/book-exists';
+import { WatchlistExistsGuard } from './guards/watchlist-exists.guard';
 
 import { AppComponent } from './containers/app';
 import { CollectionPageComponent } from './containers/collection-page';
@@ -72,7 +72,7 @@ import { reducer } from './reducers';
     CollectionPageComponent,
   ],
   providers: [
-    BookExistsGuard,
+    WatchlistExistsGuard,
     WatchlistCollectionService
   ],
   bootstrap: [

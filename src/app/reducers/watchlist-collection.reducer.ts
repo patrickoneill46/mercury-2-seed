@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import * as collection from '../actions/watchlist-collection';
+import * as collection from '../actions/watchlist-collection.actions';
 
 
 export interface State {
