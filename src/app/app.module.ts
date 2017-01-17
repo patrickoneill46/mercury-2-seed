@@ -11,18 +11,11 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MaterialModule } from '@angular/material';
 
 import { ComponentsModule } from './components';
-import { BookEffects } from './effects/book';
-import { CollectionEffects } from './effects/collection';
 import { BookExistsGuard } from './guards/book-exists';
 
 import { AppComponent } from './containers/app';
-import { FindBookPageComponent } from './containers/find-book-page';
-import { ViewBookPageComponent } from './containers/view-book-page';
-import { SelectedBookPageComponent } from './containers/selected-book-page';
 import { CollectionPageComponent } from './containers/collection-page';
-import { NotFoundPageComponent } from './containers/not-found-page';
 
-import { GoogleBooksService } from './services/google-books';
 import { WatchlistCollectionService } from './services/watchlist-collection.service';
 
 import { routes } from './routes';
@@ -72,8 +65,8 @@ import { schema } from './db';
      *
      * See: https://github.com/ngrx/effects/blob/master/docs/api.md#run
      */
-    EffectsModule.run(BookEffects),
-    EffectsModule.run(CollectionEffects),
+   // EffectsModule.run(BookEffects),
+   // EffectsModule.run(CollectionEffects),
 
     /**
      * `provideDB` sets up @ngrx/db with the provided schema and makes the Database
@@ -83,15 +76,10 @@ import { schema } from './db';
   ],
   declarations: [
     AppComponent,
-    FindBookPageComponent,
-    SelectedBookPageComponent,
-    ViewBookPageComponent,
     CollectionPageComponent,
-    NotFoundPageComponent
   ],
   providers: [
     BookExistsGuard,
-    GoogleBooksService,
     WatchlistCollectionService
   ],
   bootstrap: [

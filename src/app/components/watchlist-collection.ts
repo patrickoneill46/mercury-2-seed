@@ -1,6 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { Watchlist } from '../models/watchlist';
-import { Book } from '../models/book';
 
 @Component({
   selector: 'watchlist-collection',
@@ -20,7 +19,6 @@ import { Book } from '../models/book';
   `]
 })
 export class WatchlistCollectionComponent {
-  @Input() books: Book[];
   @Input() watchlist: Watchlist[];
 
 
