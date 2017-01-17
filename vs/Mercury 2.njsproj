@@ -98,8 +98,7 @@
     <TypeScriptCompile Include="src\app\components\watchlist-collection.ts" />
     <TypeScriptCompile Include="src\app\containers\app.ts" />
     <TypeScriptCompile Include="src\app\containers\collection-page.ts" />
-    <TypeScriptCompile Include="src\app\db.ts" />
-    <TypeScriptCompile Include="src\app\guards\book-exists.ts" />
+    <TypeScriptCompile Include="src\app\guards\watchlist-exists.ts" />
     <TypeScriptCompile Include="src\app\index.ts" />
     <TypeScriptCompile Include="src\app\models\watchlist.ts" />
     <TypeScriptCompile Include="src\app\pipes\add-commas.spec.ts" />

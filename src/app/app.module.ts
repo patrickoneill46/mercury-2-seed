@@ -20,8 +20,6 @@ import { WatchlistCollectionService } from './services/watchlist-collection.serv
 
 import { routes } from './routes';
 import { reducer } from './reducers';
-import { schema } from './db';
-
 
 
 @NgModule({
@@ -68,11 +66,6 @@ import { schema } from './db';
    // EffectsModule.run(BookEffects),
    // EffectsModule.run(CollectionEffects),
 
-    /**
-     * `provideDB` sets up @ngrx/db with the provided schema and makes the Database
-     * service available.
-     */
-    DBModule.provideDB(schema),
   ],
   declarations: [
     AppComponent,

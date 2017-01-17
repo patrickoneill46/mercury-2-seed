@@ -21,7 +21,7 @@ import * as watchlistCollection from '../actions/watchlist-collection';
  * to activate this route. Guards must return an observable of true or false.
  */
 @Injectable()
-export class BookExistsGuard implements CanActivate {
+export class WatchlistExistsGuard implements CanActivate {
   constructor(
     private store: Store<fromRoot.State>,
     private router: Router
