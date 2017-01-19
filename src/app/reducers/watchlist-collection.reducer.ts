@@ -1,4 +1,3 @@
-import { createSelector } from 'reselect';
 import * as collection from '../actions/watchlist-collection.actions';
 
 
@@ -24,26 +23,22 @@ export function reducer(state = initialState, action: collection.Actions): State
       });
     }
 
-
     case collection.ActionTypes.LOAD_SUCCESS: {
       const watchlists = action.payload;
-      console.log(action);
       return {
         loaded: true,
         loading: false,
         ids: watchlists.map(watchlist => watchlist.id),
-        list: watchlists
-      }
+        list: watchlists.map(item => item)
+      };
     }
 
     case collection.ActionTypes.ADD_WATCHLIST: { // NB look in to effects
-      console.log(action, 'PAYLOAD');
       const watchlist = action.payload;
 
       if (state.ids.indexOf(watchlist.id) > -1) {
         return state;
       }
-      console.log(state.ids, state, 'STATE IDS');
       return Object.assign({}, state, {
         ids: [...state.ids, watchlist.id],
         list: [...state.list, watchlist]
@@ -59,7 +54,7 @@ export function reducer(state = initialState, action: collection.Actions): State
 
       return Object.assign({}, state, {
         ids: [...state.ids, watchlist.id],
-        watchlist: [...state.list, watchlist]
+        list: [...state.list, watchlist]
       });
     }
 

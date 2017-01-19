@@ -17,7 +17,7 @@ export class WatchlistCollectionService {
 
   addWatchlist(watchlistName: string) {
     console.log(watchlistName, 'UPDATE');
-    const obj = {
+    const obj : Watchlist = {
       id: Math.random().toString(),
       watchlistName: watchlistName,
       markets: 'Market 1'
@@ -26,7 +26,8 @@ export class WatchlistCollectionService {
   }
 
   removeWatchlist(watchlistId: string) {
-    const obj = {
+
+    const obj: Watchlist = {
       id: watchlistId,
       watchlistName: 'Watchlist name',
       markets: 'Market 1'
@@ -34,8 +35,6 @@ export class WatchlistCollectionService {
     this.store.dispatch(new watchlistActions.RemoveWatchlistAction(obj));
 
   }
-
-
 
 }
 

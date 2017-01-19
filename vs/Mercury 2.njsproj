@@ -79,6 +79,8 @@
     <Folder Include="src\app\reducers\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\environments\" />
+    <Folder Include="src\test-utils\" />
+    <Folder Include="src\test-utils\mocks\" />
     <Folder Include="vs\" />
     <Folder Include="vs\obj\" />
     <Folder Include="vs\obj\Debug\" />
@@ -109,7 +111,9 @@
     <TypeScriptCompile Include="src\app\pipes\index.ts" />
     <TypeScriptCompile Include="src\app\reducers\index.ts" />
     <TypeScriptCompile Include="src\app\reducers\watchlist-collection.reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\watchlist.reducer.spec.ts" />
     <TypeScriptCompile Include="src\app\routes.ts" />
+    <TypeScriptCompile Include="src\app\services\watchlist-collection.service.spec.ts" />
     <TypeScriptCompile Include="src\app\services\watchlist-collection.service.ts" />
     <TypeScriptCompile Include="src\app\utils\util.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
